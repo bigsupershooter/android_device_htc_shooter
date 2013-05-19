@@ -50,6 +50,8 @@ BOARD_HAVE_SQN_WIMAX := true
 
 # Kernel Details
 TARGET_KERNEL_CONFIG := shooter_defconfig
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-gcc-4.8
+TARGET_KERNEL_CUSTOM_TOOLCHAIN_SUFFIX := arm-eabi
 
 # Camera
 TARGET_DISABLE_ARM_PIE := true
