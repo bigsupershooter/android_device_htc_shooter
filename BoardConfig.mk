@@ -36,10 +36,6 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := shooter
 
 BOARD_USE_NEW_LIBRIL_HTC := true
 
-# Graphics
-TARGET_USES_ION := true
-BOARD_HAVE_OLD_ION_API := true
-
 # 3D Support
 TARGET_HARDWARE_3D := true
 
