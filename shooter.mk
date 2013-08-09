@@ -27,7 +27,8 @@ PRODUCT_COPY_FILES += \
     device/htc/shooter/ramdisk/init.shooter.rc:root/init.shooter.rc \
     device/htc/shooter/ramdisk/init.shooter.usb.rc:root/init.shooter.usb.rc \
     device/htc/shooter/ramdisk/ueventd.shooter.rc:root/ueventd.shooter.rc \
-    device/htc/shooter/ramdisk/fstab.shooter:root/fstab.shooter
+    device/htc/shooter/ramdisk/fstab.shooter:root/fstab.shooter \
+    device/htc/shooter/ramdisk/remount.shooter:root/remount.shooter
 
 ## recovery and custom charging
 PRODUCT_COPY_FILES += \

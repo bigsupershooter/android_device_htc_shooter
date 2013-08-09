@@ -45,6 +45,8 @@ on early-init
     # Force loading of modem and Q6 images
     write /dev/smd_pkt_loopback 1
 
+    chmod 0644 /proc/cmdline
+
 on init
     mkdir /devlog 0700 root root
 
