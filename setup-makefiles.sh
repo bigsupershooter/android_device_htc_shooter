@@ -25,8 +25,7 @@ PRODUCT_COPY_FILES += \\
     vendor/$VENDOR/$DEVICE/proprietary/system/lib/hw/vendor-camera.default.so:obj/lib/hw/vendor-camera.default.so \\
     vendor/$VENDOR/$DEVICE/proprietary/system/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \\
     vendor/$VENDOR/$DEVICE/proprietary/system/lib/libacdbloader.so:obj/lib/libacdbloader.so \\
-    vendor/$VENDOR/$DEVICE/proprietary/system/lib/libacdbmapper.so:obj/lib/libacdbmapper.so \\
-    vendor/$VENDOR/$DEVICE/proprietary/system/lib/libv8.so:obj/lib/libv8.so
+    vendor/$VENDOR/$DEVICE/proprietary/system/lib/libacdbmapper.so:obj/lib/libacdbmapper.so
 
 PRODUCT_PROPERTY_OVERRIDES += \\
      drm.service.enabled=true

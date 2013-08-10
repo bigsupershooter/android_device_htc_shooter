@@ -12,10 +12,10 @@ rm -rf $BASE/*
 
 for FILE in `egrep -v '(^#|^$)' proprietary-files.txt`; do
   DIR=`dirname $FILE`
-  if [ ! -d $BASE/$DIR ]; then
-    mkdir -p $BASE/$DIR
+  if [ ! -d $BASE ]; then
+    mkdir -p $BASE
   fi
-  unzip -j -o ${UPDATE_PACKAGE} system/$FILE -d $BASE/$DIR
+  unzip -j -o ${UPDATE_PACKAGE} system/$FILE -d $BASE
 done
 
 ./setup-makefiles.sh
