@@ -25,6 +25,8 @@ gsm.sim.operator.iso-country = us
 gsm.operator.alpha = sprint
 gsm.operator.numeric = 310120
 gsm.operator.iso-country = us
+ro.cdma.home.operator.numeric = 310120
+ro.cdma.home.operator.alpha = sprint
 
 #
 # system props for the data modules

@@ -110,13 +110,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CMWimaxSettings
 
-## CDMA Sprint stuffs
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.com.google.clientidbase=android-sprint-us \
-	ro.com.google.locationfeatures=1 \
-	ro.cdma.home.operator.numeric=310120 \
-	ro.cdma.home.operator.alpha=Sprint \
-        ro.goo.version=$(shell date +%Y%m%d%H%M%S)
-
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/htc/shooter/shooter-vendor.mk)
