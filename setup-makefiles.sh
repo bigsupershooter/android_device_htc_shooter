@@ -42,7 +42,7 @@ for FILE in `egrep -v '(^#|^$)' proprietary-files.txt`; do
   if [ $COUNT = "0" ]; then
     LINEEND=""
   fi
-  echo "  $OUTDIR/proprietary/system/$FILE:$FILE$LINEEND" >> $MAKEFILE
+  echo "  $OUTDIR/proprietary/system/$FILE:/system/$FILE$LINEEND" >> $MAKEFILE
 done
 
 (cat << EOF) > ../../../$OUTDIR/$DEVICE-vendor.mk
