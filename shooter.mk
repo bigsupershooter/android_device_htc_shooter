@@ -111,4 +111,4 @@ PRODUCT_PACKAGES += \
     CMWimaxSettings
 
 # call the proprietary setup
-$(call inherit-product-if-exists, vendor/htc/shooter/shooter-vendor.mk)
+$(call inherit-product, vendor/htc/shooter/shooter-vendor.mk)
