@@ -26,8 +26,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/ramdisk/init.shooter.rc:root/init.shooter.rc \
     $(COMMON_PATH)/ramdisk/init.shooter.usb.rc:root/init.shooter.usb.rc \
     $(COMMON_PATH)/ramdisk/ueventd.shooter.rc:root/ueventd.shooter.rc \
-    $(COMMON_PATH)/ramdisk/fstab.shooter:root/fstab.shooter \
-    $(COMMON_PATH)/ramdisk/remount.shooter:root/remount.shooter
+    $(COMMON_PATH)/ramdisk/fstab.shooter:root/fstab.shooter
 
 ## recovery and custom charging
 PRODUCT_COPY_FILES += \
