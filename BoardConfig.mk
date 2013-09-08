@@ -48,6 +48,9 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0 androidboot.hardware=shooter no_console_
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/shooter
 
+# RIL
+COMMON_GLOBAL_CFLAGS += -DNEW_LIBRIL_HTC
+
 # cat /proc/emmc
 #dev:        size     erasesize name
 # mmcblk0p17: 00040000 00000200 "misc"
