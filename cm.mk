@@ -11,7 +11,7 @@ $(call inherit-product, vendor/cm/config/cdma.mk)
 # Inherit device configuration
 $(call inherit-product, device/htc/shooter/shooter.mk)
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_shooter BUILD_FINGERPRINT="sprint/htc_shooter/shooter:4.0.3/IML74K/130920.2:user/release-keys" PRIVATE_BUILD_DESC="2.08.651.2 CL130920 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_shooter BUILD_FINGERPRINT="htc/htc_shooter/shooter:4.0.3/IML74K/560205.6:user/release-keys" PRIVATE_BUILD_DESC="2.95.651.6 CL560205 release-keys"
 
 # Device naming
 PRODUCT_DEVICE := shooter

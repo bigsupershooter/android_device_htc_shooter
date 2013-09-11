@@ -16,20 +16,29 @@ persist.user.panel3D=1
 
 rild.libpath=/system/lib/libhtc_ril.so
 rild.libargs=-d /dev/smd0
+persist.rild.nitz_plmn=""
+persist.rild.nitz_long_ons_0=""
+persist.rild.nitz_long_ons_1=""
+persist.rild.nitz_long_ons_2=""
+persist.rild.nitz_long_ons_3=""
+persist.rild.nitz_short_ons_0=""
+persist.rild.nitz_short_ons_1=""
+persist.rild.nitz_short_ons_2=""
+persist.rild.nitz_short_ons_3=""
 ro.vendor.extension_library=/system/lib/libqc-opt.so
 # htc v4 ril
 ro.telephony.ril_class=HTCQualcommRIL
 ro.telephony.ril.v3=signalstrength
 ro.ril.enable.garbage.filter=0
-ro.telephony.default_network = 4
-gsm.sim.operator.alpha = sprint
-gsm.sim.operator.numeric = 310120
-gsm.sim.operator.iso-country = us
-gsm.operator.alpha = sprint
-gsm.operator.numeric = 310120
-gsm.operator.iso-country = us
-ro.cdma.home.operator.numeric = 310120
-ro.cdma.home.operator.alpha = sprint
+ro.telephony.default_network=4
+gsm.sim.operator.alpha=sprint
+gsm.sim.operator.numeric=310120
+gsm.sim.operator.iso-country=us
+gsm.operator.alpha=sprint
+gsm.operator.numeric=310120
+gsm.operator.iso-country=us
+ro.cdma.home.operator.numeric=310120
+ro.cdma.home.operator.alpha=sprint
 
 #
 # system props for the data modules
