@@ -1,7 +1,6 @@
 # Executable files
 bin/charging
 bin/htcbatt
-bin/mpdecision
 bin/netmgrd
 bin/qmuxd
 bin/rmt_storage
