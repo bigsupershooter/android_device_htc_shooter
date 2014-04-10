@@ -208,6 +208,9 @@ on boot
     mkdir /data/wimax/ 0770  system system
     mkdir /data/wimax/log 0770  system system
 
+    # fast charge
+    write /sys/kernel/fast_charge/force_fast_charge 2
+
 # Services start here
 service qcamerasvr /system/bin/mm-qcamera-daemon
     class main
