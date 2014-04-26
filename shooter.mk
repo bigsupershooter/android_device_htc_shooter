@@ -62,12 +62,28 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/dsp/soundimage/srs_geq10.cfg:system/etc/soundimage/srs_geq10.cfg \
     $(COMMON_PATH)/dsp/soundimage/srsfx_trumedia_51.cfg:system/etc/soundimage/srsfx_trumedia_51.cfg \
     $(COMMON_PATH)/dsp/soundimage/srsfx_trumedia_movie.cfg:system/etc/soundimage/srsfx_trumedia_movie.cfg \
-    $(COMMON_PATH)/dsp/soundimage/srsfx_trumedia_music.cfg:system/etc/soundimage/srsfx_trumedia_music.cfg
+    $(COMMON_PATH)/dsp/soundimage/srsfx_trumedia_music.cfg:system/etc/soundimage/srsfx_trumedia_music.cfg \
+    $(COMMON_PATH)/dsp/CodecDSPID_NEL.txt:system/etc/CodecDSPID_NEL.txt \
+    $(COMMON_PATH)/dsp/CodecDSPID_WB.txt:system/etc/CodecDSPID_WB.txt \
+    $(COMMON_PATH)/dsp/IOTable.txt:system/etc/IOTable.txt \
+    $(COMMON_PATH)/dsp/IOTable_NEL.txt:system/etc/IOTable_NEL.txt \
+    $(COMMON_PATH)/dsp/soundimage/Sound_Phone_Original_HP_NEL.txt:system/etc/soundimage/Sound_Phone_Original_HP_NEL.txt \
+    $(COMMON_PATH)/dsp/soundimage/Sound_Phone_Original_HP_WB.txt:system/etc/soundimage/Sound_Phone_Original_HP_WB.txt \
+    $(COMMON_PATH)/dsp/soundimage/Sound_Phone_Original_NEL.txt:system/etc/soundimage/Sound_Phone_Original_NEL.txt \
+    $(COMMON_PATH)/dsp/soundimage/Sound_Phone_Original_REC_NEL.txt:system/etc/soundimage/Sound_Phone_Original_REC_NEL.txt \
+    $(COMMON_PATH)/dsp/soundimage/Sound_Phone_Original_REC_Voda.txt:system/etc/soundimage/Sound_Phone_Original_REC_Voda.txt \
+    $(COMMON_PATH)/dsp/soundimage/Sound_Phone_Original_REC_WB.txt:system/etc/soundimage/Sound_Phone_Original_REC_WB.txt \
+    $(COMMON_PATH)/dsp/soundimage/Sound_Phone_Original_SPK_NEL.txt:system/etc/soundimage/Sound_Phone_Original_SPK_NEL.txt \
+    $(COMMON_PATH)/dsp/soundimage/Sound_Phone_Original_SPK_Voda.txt:system/etc/soundimage/Sound_Phone_Original_SPK_Voda.txt \
+    $(COMMON_PATH)/dsp/soundimage/Sound_Phone_Original_SPK_WB.txt:system/etc/soundimage/Sound_Phone_Original_SPK_WB.txt \
+    $(COMMON_PATH)/dsp/soundimage/Sound_Phone_Original_WB.txt:system/etc/soundimage/Sound_Phone_Original_WB.txt \
+    $(COMMON_PATH)/dsp/soundimage/srs_bypass.cfg:system/etc/soundimage/srs_bypass.cfg \
+    $(COMMON_PATH)/dsp/soundimage/srs_global.cfg:system/etc/soundimage/srs_global.cfg \
+    $(COMMON_PATH)/dsp/soundimage/srsfx_trumedia_voice.cfg:system/etc/soundimage/srsfx_trumedia_voice.cfg
 
 # keylayouts
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/keylayout/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl\
-    $(COMMON_PATH)/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl\
     $(COMMON_PATH)/keylayout/atmel-touchscreen.kl:system/usr/keylayout/atmel-touchscreen.kl \
     $(COMMON_PATH)/keylayout/shooter-keypad.kl:system/usr/keylayout/shooter-keypad.kl
 
