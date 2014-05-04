@@ -193,10 +193,6 @@ on boot
 
 # Services start here
 
-service logcat /system/bin/logcat -f /data/data/logcat
-	class main
-	oneshot
-
 service hdmid /system/bin/hdmid
     class main
     socket hdmid stream 0660 root system graphics
