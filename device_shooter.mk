@@ -34,7 +34,8 @@ PRODUCT_COPY_FILES += \
     device/htc/shooter/recovery/sbin/power_test:recovery/root/sbin/power_test \
     device/htc/shooter/recovery/sbin/offmode_charging:recovery/root/sbin/offmode_charging \
     device/htc/shooter/recovery/sbin/detect_key:recovery/root/sbin/detect_key \
-    device/htc/shooter/recovery/sbin/htcbatt:recovery/root/sbin/htcbatt
+    device/htc/shooter/recovery/sbin/htcbatt:recovery/root/sbin/htcbatt \
+    device/htc/shooter/recovery/etc/twrp.fstab:recovery/root/etc/twrp.fstab
 
 ## dsp Audio
 PRODUCT_COPY_FILES += \

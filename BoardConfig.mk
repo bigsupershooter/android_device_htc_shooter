@@ -40,6 +40,7 @@ TARGET_KERNEL_CONFIG := shooter_defconfig
 TARGET_RECOVERY_FSTAB := device/htc/shooter/rootdir/etc/fstab.shooter
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TARGET_RECOVERY_INITRC := device/htc/shooter/recovery/init.rc
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := shooter
