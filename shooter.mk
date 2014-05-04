@@ -49,6 +49,10 @@ PRODUCT_COPY_FILES += \
     device/htc/shooter/keylayout/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
     device/htc/shooter/keylayout/shooter-keypad.kl:system/usr/keylayout/shooter-keypad.kl
 
+# Misc
+PRODUCT_COPY_FILES += \
+    device/htc/shooter/firmware/default_bak.acdb:system/etc/firmware/default_bak.acdb
+
 # Input device config
 PRODUCT_COPY_FILES += \
     device/htc/shooter/idc/atmel-touchscreen.idc:system/usr/idc/atmel-touchscreen.idc \
