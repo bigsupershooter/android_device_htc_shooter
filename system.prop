@@ -16,6 +16,10 @@ gsm.operator.alpha = sprint
 gsm.operator.numeric = 310120
 gsm.operator.iso-country = us
 
+# audio
+lpa.decode=true
+lpa.use-stagefright=true
+
 # wifi
 wifi.interface=wlan0
 
