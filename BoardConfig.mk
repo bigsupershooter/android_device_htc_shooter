@@ -52,6 +52,9 @@ BOARD_USES_LEGACY_RIL := true
 COMMON_GLOBAL_CFLAGS += -DBOARD_HAVE_SQN_WIMAX
 BOARD_HAVE_SQN_WIMAX := true
 
+# Lights
+TARGET_HAS_NO_BLUE_LED := true
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/shooter/bluetooth/include
 BOARD_BLUEDROID_VENDOR_CONF := device/htc/shooter/bluetooth/vnd_shooter.txt
