@@ -22,6 +22,7 @@ on fs
 
     # create firmware mount points
     mkdir /firmware_radio 0771 system system
+    mkdir /firmware_q6 0771 system system
 
     # mount all mmc partitions
     mount_all /fstab.shooter
@@ -38,17 +39,17 @@ on fs
     # link firmware
     # q6
     
-    symlink /firmware_radio/q6.b09 /system/etc/firmware/q6.b09
-    symlink /firmware_radio/q6.b08 /system/etc/firmware/q6.b08
-    symlink /firmware_radio/q6.b07 /system/etc/firmware/q6.b07
-    symlink /firmware_radio/q6.b06 /system/etc/firmware/q6.b06
-    symlink /firmware_radio/q6.b05 /system/etc/firmware/q6.b05
-    symlink /firmware_radio/q6.b04 /system/etc/firmware/q6.b04
-    symlink /firmware_radio/q6.b03 /system/etc/firmware/q6.b03
-    symlink /firmware_radio/q6.b02 /system/etc/firmware/q6.b02
-    symlink /firmware_radio/q6.b01 /system/etc/firmware/q6.b01
-    symlink /firmware_radio/q6.b00 /system/etc/firmware/q6.b00
-    symlink /firmware_radio/q6.mdt /system/etc/firmware/q6.mdt
+    symlink /firmware_q6/q6.b09 /system/etc/firmware/q6.b09
+    symlink /firmware_q6/q6.b08 /system/etc/firmware/q6.b08
+    symlink /firmware_q6/q6.b07 /system/etc/firmware/q6.b07
+    symlink /firmware_q6/q6.b06 /system/etc/firmware/q6.b06
+    symlink /firmware_q6/q6.b05 /system/etc/firmware/q6.b05
+    symlink /firmware_q6/q6.b04 /system/etc/firmware/q6.b04
+    symlink /firmware_q6/q6.b03 /system/etc/firmware/q6.b03
+    symlink /firmware_q6/q6.b02 /system/etc/firmware/q6.b02
+    symlink /firmware_q6/q6.b01 /system/etc/firmware/q6.b01
+    symlink /firmware_q6/q6.b00 /system/etc/firmware/q6.b00
+    symlink /firmware_q6/q6.mdt /system/etc/firmware/q6.mdt
     symlink /firmware_radio/modem.b09 /system/etc/firmware/modem.b09
     symlink /firmware_radio/modem.b08 /system/etc/firmware/modem.b08
     symlink /firmware_radio/modem.b07 /system/etc/firmware/modem.b07
