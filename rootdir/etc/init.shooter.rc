@@ -203,6 +203,11 @@ on boot
     mkdir /data/wimax/log 0770  system system
 
 # Services start here
+service qcamerasvr /system/bin/mm-qcamera-daemon
+    class main
+    user system
+    group system camera inet
+
 service adc_fixup /system/bin/cat /sys/devices/platform/msm_adc/batt_id
     class main
     oneshot
