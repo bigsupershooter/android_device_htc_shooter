@@ -38,7 +38,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01400000
 TARGET_KERNEL_CONFIG := shooter_defconfig
 
 TARGET_RECOVERY_FSTAB := device/htc/shooter/rootdir/etc/fstab.shooter
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TARGET_RECOVERY_INITRC := device/htc/shooter/recovery/init.rc
 
