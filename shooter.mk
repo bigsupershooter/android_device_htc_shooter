@@ -22,12 +22,11 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/shooter-common/overlay-cdma
 $(call inherit-product, device/htc/shooter-common/shooter-common.mk)
 
 # ramdisk stuffs
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/ramdisk/init.shooter.rc:root/init.shooter.rc \
-    $(COMMON_PATH)/ramdisk/init.shooter.usb.rc:root/init.shooter.usb.rc \
-    $(COMMON_PATH)/ramdisk/ueventd.shooter.rc:root/ueventd.shooter.rc \
-    $(COMMON_PATH)/ramdisk/fstab.shooter:root/fstab.shooter \
-    $(COMMON_PATH)/recovery/etc/twrp.fstab:root/etc/twrp.fstab
+PRODUCT_PACKAGES += \
+    init.shooter.rc \
+    init.shooter.usb.rc \
+    ueventd.shooter.rc \
+    fstab.shooter
 
 ## recovery and custom charging
 PRODUCT_COPY_FILES += \
@@ -35,7 +34,8 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/recovery/sbin/power_test:recovery/root/sbin/power_test \
     $(COMMON_PATH)/recovery/sbin/offmode_charging:recovery/root/sbin/offmode_charging \
     $(COMMON_PATH)/recovery/sbin/detect_key:recovery/root/sbin/detect_key \
-    $(COMMON_PATH)/recovery/sbin/htcbatt:recovery/root/sbin/htcbatt
+    $(COMMON_PATH)/recovery/sbin/htcbatt:recovery/root/sbin/htcbatt \
+    $(COMMON_PATH)/recovery/etc/twrp.fstab:root/etc/twrp.fstab
 
 ## dsp Audio
 PRODUCT_COPY_FILES += \
