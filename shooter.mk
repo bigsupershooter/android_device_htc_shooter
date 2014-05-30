@@ -29,13 +29,14 @@ PRODUCT_PACKAGES += \
     fstab.shooter
 
 ## recovery and custom charging
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/recovery/sbin/choice_fn:recovery/root/sbin/choice_fn \
-    $(COMMON_PATH)/recovery/sbin/power_test:recovery/root/sbin/power_test \
-    $(COMMON_PATH)/recovery/sbin/offmode_charging:recovery/root/sbin/offmode_charging \
-    $(COMMON_PATH)/recovery/sbin/detect_key:recovery/root/sbin/detect_key \
-    $(COMMON_PATH)/recovery/sbin/htcbatt:recovery/root/sbin/htcbatt \
-    $(COMMON_PATH)/recovery/etc/twrp.fstab:root/etc/twrp.fstab
+PRODUCT_PACKAGES += \
+    init.recovery.shooter.rc \
+    choice_fn \
+    detect_key \
+    htcbatt \
+    offmode_charging \
+    power_test \
+    twrp.fstab
 
 ## dsp Audio
 PRODUCT_COPY_FILES += \
