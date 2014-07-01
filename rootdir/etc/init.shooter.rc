@@ -198,7 +198,11 @@ on boot
 
     #Vibrator
     chown system system sys/devices/platform/msm_ssbi.0/pm8058-core/pm8xxx-vib/amp
-    chmod 666 sys/devices/platform/msm_ssbi.0/pm8058-core/pm8xxx-vib/amp
+    chmod 0666 sys/devices/platform/msm_ssbi.0/pm8058-core/pm8xxx-vib/amp
+
+    # Color temp
+    chown system system /sys/module/mdp/parameters/mdp_gamma_cooler_colors
+    chmod 0664 /sys/module/mdp/parameters/mdp_gamma_cooler_colors
 
 # Force loading of modem and Q6 images
 service load-modem /system/bin/load-modem.sh
@@ -212,7 +216,7 @@ service wpa_supplicant /system/bin/wpa_supplicant -Dnl80211 -iwlan0 -c /data/mis
     -e/data/misc/wifi/entropy.bin -g@android:wpa_wlan0
     user root
     group wifi inet
-    socket wpa_wlan0 dgram 660 wifi wifi
+    socket wpa_wlan0 dgram 0660 wifi wifi
     disabled
     oneshot
 
@@ -331,7 +335,7 @@ service netmgrd /system/bin/netmgrd
 service sequansd /system/bin/sequansd /etc/wimax/sequansd/sequansd_app.xml
     user root
     group root inet
-    socket sequansd_0 dgram 660 root root
+    socket sequansd_0 dgram 0660 root root
     disabled
     oneshot
 
@@ -406,7 +410,7 @@ service getWMXPropd /system/bin/getWiMAXPropDaemond
 
 service dmagent /system/bin/dmagent -N -P19 -VSY
     class main
-    socket dmagent stream 660 root radio
+    socket dmagent stream 0660 root radio
     user root
     group radio cache inet misc
 
