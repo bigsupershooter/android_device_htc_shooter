@@ -20,6 +20,5 @@
 # In particular, you can add lunch options with the add_lunch_combo
 # function: add_lunch_combo generic-eng
 
-add_lunch_combo cm_shooter-userdebug
-add_lunch_combo cm_shooter-eng
-
+add_lunch_combo lineage_shooter-userdebug
+add_lunch_combo lineage_shooter-eng
